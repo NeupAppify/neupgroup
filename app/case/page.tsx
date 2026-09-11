@@ -1,7 +1,7 @@
 
 import type { Metadata } from 'next';
 import { caseStudies } from '@/app/case/case-studies';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@neup/components/ui/card';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 

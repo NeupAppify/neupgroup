@@ -3,8 +3,8 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Button } from '@/components/ui/button';
-import { cn } from '@/core/utils';
+import { Button } from '@neup/components/ui/button';
+import { cn } from '@neup/core/utils';
 
 const navLinks = [
   { href: '/#ventures', label: 'Ventures' },

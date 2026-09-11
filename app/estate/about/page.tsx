@@ -1,14 +1,14 @@
 import type { Metadata } from 'next';
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Button } from "@neup/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@neup/components/ui/card";
 import { CheckCircle, Search, Users, ShieldCheck, Handshake, ArrowRight, Building, MapPin, DollarSign, Home, KeyRound } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { Input } from '@/components/ui/input';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Badge } from '@/components/ui/badge';
+import { Avatar, AvatarFallback, AvatarImage } from '@neup/components/ui/avatar';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@neup/components/ui/carousel';
+import { Input } from '@neup/components/ui/input';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@neup/components/ui/select';
+import { Badge } from '@neup/components/ui/badge';
 
 export const metadata: Metadata = {
   title: 'Neup.Estate | Find Your Dream Property in Nepal',

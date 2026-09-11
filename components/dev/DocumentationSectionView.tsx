@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@neup/components/ui/card';
 import type { DocumentationSection } from '@/lib/dev-documentation';
 
 type DocumentationSectionViewProps = {

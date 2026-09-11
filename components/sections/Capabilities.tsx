@@ -1,5 +1,5 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@neup/components/ui/tabs";
+import { Card, CardContent, CardHeader, CardTitle } from "@neup/components/ui/card";
 import { Bot, Cloud, Blocks, Speaker } from "lucide-react";
 
 const capabilities = [

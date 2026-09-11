@@ -1,7 +1,7 @@
 
 import type { Metadata } from 'next';
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@neup/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@neup/components/ui/card";
 import { CheckCircle, ArrowRight, Briefcase, BookOpen, Sparkles, Code, Lightbulb, Users } from "lucide-react";
 import Link from "next/link";
 import { NeupLogo } from "@/components/NeupLogo";

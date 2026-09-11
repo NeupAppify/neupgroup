@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@neup/components/ui/button";
 import Link from "next/link";
 import { Handshake, Briefcase } from "lucide-react";
 

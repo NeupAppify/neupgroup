@@ -2,8 +2,8 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { Paintbrush } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
+import { Button } from '@neup/components/ui/button';
+import { Popover, PopoverContent, PopoverTrigger } from '@neup/components/ui/popover';
 import { useTheme } from '@/components/ThemeProvider';
 
 const colors = [

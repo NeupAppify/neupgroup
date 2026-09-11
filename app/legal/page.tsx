@@ -1,6 +1,6 @@
 
 import type { Metadata } from 'next';
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@neup/components/ui/card";
 import { ArrowRight, FileText, Cookie, Shield, Gavel } from 'lucide-react';
 import Link from 'next/link';
 

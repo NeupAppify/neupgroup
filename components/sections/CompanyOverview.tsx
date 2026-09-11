@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@neup/components/ui/card";
 import { Building, Scale, BookOpen } from "lucide-react";
 
 export function CompanyOverview() {

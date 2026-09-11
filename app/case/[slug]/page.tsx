@@ -2,8 +2,8 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { caseStudies, getCaseStudyBySlug, getAllCaseStudySlugs } from '@/app/case/case-studies';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@neup/components/ui/card';
+import { Button } from '@neup/components/ui/button';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 

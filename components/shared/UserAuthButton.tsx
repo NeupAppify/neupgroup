@@ -1,7 +1,7 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Button } from "@neup/components/ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "@neup/components/ui/avatar";
 import { useSession } from "@/components/providers/SessionProvider";
 import Link from "next/link";
 

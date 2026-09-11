@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardContent } from "@neup/components/ui/card";
 import { Target, Layers, Hourglass, Users, Globe } from 'lucide-react';
 
 const principles = [

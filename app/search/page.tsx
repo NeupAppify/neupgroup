@@ -1,13 +1,13 @@
 
 import type { Metadata } from 'next';
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Button } from "@neup/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@neup/components/ui/card";
 import { CheckCircle, Search, Shield, ArrowRight, Bot, Filter, Globe, Link as LinkIcon } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { Input } from '@/components/ui/input';
+import { Avatar, AvatarFallback, AvatarImage } from '@neup/components/ui/avatar';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@neup/components/ui/carousel';
+import { Input } from '@neup/components/ui/input';
 
 export const metadata: Metadata = {
   title: 'Neup.Search | Find What Matters, Instantly',

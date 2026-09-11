@@ -1,13 +1,13 @@
 
 'use client';
 
-import { Badge } from "@/components/ui/badge";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@neup/components/ui/badge";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@neup/components/ui/card";
 import { ArrowUpRight } from 'lucide-react';
 import Link from "next/link";
 import { ventures, type Venture } from '@/components/sections/VenturePortfolio.config';
 import { useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@neup/components/ui/button";
 
 
 const statusStyles: { [key: string]: string } = {

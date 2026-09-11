@@ -1,7 +1,7 @@
 
 import type { Metadata } from 'next';
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from "@neup/components/ui/card";
+import { Button } from '@neup/components/ui/button';
 import { Download } from 'lucide-react';
 
 export const metadata: Metadata = {

@@ -1,7 +1,7 @@
 
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@neup/components/ui/card";
 import { Briefcase, Landmark, Mountain, Plane, Tag, TrendingUp, ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@neup/components/ui/button";
 import Link from "next/link";
 import Image from 'next/image';
 

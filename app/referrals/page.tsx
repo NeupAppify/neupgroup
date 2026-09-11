@@ -1,11 +1,11 @@
 
 import type { Metadata } from 'next';
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Button } from "@neup/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@neup/components/ui/card";
 import { CheckCircle, ArrowRight, Gift, Users, DollarSign, UserPlus } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '@neup/components/ui/avatar';
 
 export const metadata: Metadata = {
   title: 'Referrals | Earn by Connecting!',

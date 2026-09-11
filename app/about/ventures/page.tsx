@@ -5,8 +5,8 @@ import {
 } from '@/components/sections/VenturePortfolio.config';
 import { ArrowUpRight } from 'lucide-react';
 import Link from 'next/link';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@neup/components/ui/card';
+import { Badge } from '@neup/components/ui/badge';
 
 export const metadata: Metadata = {
   title: 'Our Ventures',

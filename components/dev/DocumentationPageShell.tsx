@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 
-import { Badge } from '@/components/ui/badge';
+import { Badge } from '@neup/components/ui/badge';
 
 type DocumentationPageShellProps = {
   title: string;

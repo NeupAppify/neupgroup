@@ -3,10 +3,10 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Button } from '@/components/ui/button';
+import { Button } from '@neup/components/ui/button';
 import { NeupLogo } from '@/components/NeupLogo';
 import { ventures } from '@/components/sections/VenturePortfolio.config';
-import { useTypewriter } from '@/core/hooks/useTypewritter';
+import { useTypewriter } from '@neup/core/hooks/useTypewritter';
 import { useEffect, useState } from 'react';
 import { ArrowLeft } from 'lucide-react';
 import { MobileNav } from './MobileNav';

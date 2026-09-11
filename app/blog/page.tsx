@@ -1,10 +1,10 @@
 
 import type { Metadata } from 'next';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@neup/components/ui/card';
 import { ArrowRight, Rss } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Button } from '@/components/ui/button';
+import { Button } from '@neup/components/ui/button';
 
 export const metadata: Metadata = {
   title: 'Neup.Blog',

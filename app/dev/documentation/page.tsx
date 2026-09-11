@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 import { DocumentationPageShell } from '@/components/dev/DocumentationPageShell';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@neup/components/ui/card';
 import { documentationChapters } from '@/lib/dev-documentation';
 
 export const metadata: Metadata = {

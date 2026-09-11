@@ -1,14 +1,12 @@
 
 import type { Metadata } from 'next';
 import './globals.css';
-import { cn } from '@/core/utils';
+import { cn } from '@neup/core/utils';
 import { Header } from '@/components/shared/Header';
 import { Footer } from '@/components/shared/Footer';
-import { Toaster } from '@/components/ui/toaster';
-import { ProgressBar } from '@/components/shared/ProgressBar';
-import { Suspense } from 'react';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { SessionProvider } from '@/components/providers/SessionProvider';
+import RootLayoutShell from '@neup/components/layout/RootLayout';
 
 export const metadata: Metadata = {
   title: {
@@ -34,13 +32,11 @@ export default function RootLayout({
       <body className={cn('font-body antialiased')}>
         <ThemeProvider>
           <SessionProvider>
-            <Suspense>
-              <ProgressBar />
-            </Suspense>
-            <Header />
-            <main>{children}</main>
-            <Footer />
-            <Toaster />
+            <RootLayoutShell>
+              <Header />
+              <main>{children}</main>
+              <Footer />
+            </RootLayoutShell>
           </SessionProvider>
         </ThemeProvider>
       </body>
