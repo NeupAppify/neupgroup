@@ -1,4 +1,5 @@
 import { Button } from "@neup/components/ui/button";
+import { LinkButton } from '@neup/components/ui/link-button';
 import Link from "next/link";
 import { MoveRight } from "lucide-react";
 import Image from "next/image";
@@ -27,17 +28,13 @@ export function Hero() {
               </p>
             </div>
             <div className="flex flex-col gap-4 min-[400px]:flex-row">
-              <Button asChild size="lg">
-                <Link href="#ventures">
+              <LinkButton size="lg" href="#ventures">
                   Explore Ventures
                   <MoveRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg">
-                <Link href="mailto:contact@neup.group">
+                </LinkButton>
+              <LinkButton variant="outline" size="lg" href="mailto:contact@neup.group">
                   Contact Us
-                </Link>
-              </Button>
+                </LinkButton>
             </div>
           </div>
           <div className="relative mx-auto w-full max-w-2xl">
@@ -57,3 +54,7 @@ export function Hero() {
     </section>
   );
 }
+
+undefined
+undefined
+undefined

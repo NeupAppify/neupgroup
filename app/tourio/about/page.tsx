@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Button } from "@neup/components/ui/button";
+import { LinkButton } from '@neup/components/ui/link-button';
 import { Card, CardContent, CardHeader, CardTitle } from "@neup/components/ui/card";
 import { CheckCircle, Search, Map, ShoppingBag, Bot, ArrowRight, Building2, TrendingUp, BarChart, Rocket, Plane } from "lucide-react";
 import Link from "next/link";
@@ -77,18 +78,14 @@ export default function TourioPage() {
                         Neup.Tourio helps you find the best food, local experiences, and travel packages with smart recommendations and easy booking.
                     </p>
                     <div className="mt-8 flex flex-wrap gap-4">
-                        <Button size="lg" asChild>
-                            <Link href="#explore">
+                        <LinkButton size="lg" href="#explore">
                                 Explore Near You
                                 <Search className="ml-2" />
-                            </Link>
-                        </Button>
-                        <Button size="lg" variant="ghost" asChild>
-                            <Link href="#for-business">
+                            </LinkButton>
+                        <LinkButton size="lg" variant="ghost" href="#for-business">
                                 List Your Business
                                 <ArrowRight className="ml-2" />
-                            </Link>
-                        </Button>
+                            </LinkButton>
                     </div>
                 </div>
                  <div className="flex justify-center">
@@ -202,11 +199,9 @@ export default function TourioPage() {
                            ))}
                         </div>
                         <div className="pt-4">
-                            <Button size="lg" asChild>
-                                <Link href="mailto:partner@neup.group">
+                            <LinkButton size="lg" href="mailto:partner@neup.group">
                                     List Your Business on Neup.Tourio
-                                </Link>
-                            </Button>
+                                </LinkButton>
                         </div>
                     </div>
                 </div>
@@ -254,12 +249,10 @@ export default function TourioPage() {
               Ready to Explore Smarter?
             </h2>
             <div className="mt-8">
-              <Button size="lg" asChild>
-                <Link href="#explore">
+              <LinkButton size="lg" href="#explore">
                   Start Exploring
                   <ArrowRight className="ml-2" />
-                </Link>
-              </Button>
+                </LinkButton>
             </div>
           </div>
         </section>
@@ -270,3 +263,11 @@ export default function TourioPage() {
 }
 
     
+
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined

@@ -1,6 +1,7 @@
 
 import type { Metadata } from 'next';
 import { Button } from "@neup/components/ui/button";
+import { LinkButton } from '@neup/components/ui/link-button';
 import { Card, CardContent, CardHeader, CardTitle } from "@neup/components/ui/card";
 import { CheckCircle, Target, Briefcase, BarChart, Settings, Rocket, Building2, Mountain, ToyBrick, ShoppingCart, Quote } from "lucide-react";
 import Link from "next/link";
@@ -94,12 +95,8 @@ export default function MarketingPage() {
               Neup.Marketing designs growth systems that turn traffic into revenue, brands into assets, and marketing into a predictable engine.
             </p>
             <div className="mt-8 flex justify-start gap-4">
-              <Button size="lg" asChild>
-                <Link href="mailto:growth@neup.group">Start a Growth Conversation</Link>
-              </Button>
-              <Button size="lg" variant="outline" asChild>
-                <Link href="#capabilities">See How We Build Growth</Link>
-              </Button>
+              <LinkButton size="lg" href="mailto:growth@neup.group">Start a Growth Conversation</LinkButton>
+              <LinkButton size="lg" variant="outline" href="#capabilities">See How We Build Growth</LinkButton>
             </div>
           </div>
         </section>
@@ -301,9 +298,7 @@ export default function MarketingPage() {
               Start a conversation with Neup.Marketing and let’s turn your marketing into a growth asset.
             </p>
             <div className="mt-8">
-              <Button size="lg" asChild>
-                <Link href="mailto:growth@neup.group">Start a Growth Conversation</Link>
-              </Button>
+              <LinkButton size="lg" href="mailto:growth@neup.group">Start a Growth Conversation</LinkButton>
             </div>
           </div>
         </section>
@@ -311,3 +306,9 @@ export default function MarketingPage() {
     </div>
   );
 }
+
+undefined
+undefined
+undefined
+undefined
+undefined

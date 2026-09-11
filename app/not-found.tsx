@@ -1,6 +1,7 @@
 
 import type { Metadata } from 'next';
 import { Button } from '@neup/components/ui/button';
+import { LinkButton } from '@neup/components/ui/link-button';
 import Link from 'next/link';
 import { Home } from 'lucide-react';
 
@@ -58,13 +59,13 @@ export default function NotFound() {
           <p className="mt-4 text-muted-foreground">
             {message}
           </p>
-          <Button asChild className="mt-8">
-            <Link href="/">
+          <LinkButton className="mt-8" href="/">
               <Home className="mr-2 h-4 w-4" />
               Return to Homepage
-            </Link>
-          </Button>
+            </LinkButton>
         </div>
     </div>
   );
 }
+
+undefined

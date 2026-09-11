@@ -1,6 +1,7 @@
 
 import type { Metadata } from 'next';
 import { Button } from "@neup/components/ui/button";
+import { LinkButton } from '@neup/components/ui/link-button';
 import { Card, CardContent, CardHeader, CardTitle } from "@neup/components/ui/card";
 import { CheckCircle, ArrowRight, Rss, Layers, Repeat, BarChart, Youtube, Linkedin, Facebook, Instagram, Twitter } from "lucide-react";
 import Link from "next/link";
@@ -76,12 +77,8 @@ export default function SocialsPage() {
                       Neup.Socials designs platform-specific content systems that grow visibility, trust, and engagement across social platforms.
                     </p>
                     <div className="mt-8 flex flex-wrap gap-4">
-                      <Button size="lg" asChild>
-                        <Link href="mailto:socials@neup.group">Build Your Distribution Engine</Link>
-                      </Button>
-                      <Button size="lg" variant="outline" asChild>
-                        <Link href="#capabilities">See How We Do It</Link>
-                      </Button>
+                      <LinkButton size="lg" href="mailto:socials@neup.group">Build Your Distribution Engine</LinkButton>
+                      <LinkButton size="lg" variant="outline" href="#capabilities">See How We Do It</LinkButton>
                     </div>
                 </div>
                 <div className="flex justify-center">
@@ -222,12 +219,10 @@ export default function SocialsPage() {
               Start a conversation and let's design your distribution engine.
             </p>
             <div className="mt-8">
-              <Button size="lg" asChild>
-                <Link href="mailto:socials@neup.group">
+              <LinkButton size="lg" href="mailto:socials@neup.group">
                   Build Your Distribution Engine
                   <ArrowRight className="ml-2" />
-                </Link>
-              </Button>
+                </LinkButton>
             </div>
           </div>
         </section>
@@ -235,3 +230,9 @@ export default function SocialsPage() {
     </div>
   );
 }
+
+undefined
+undefined
+undefined
+undefined
+undefined

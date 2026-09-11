@@ -2,6 +2,7 @@
 import { Card, CardContent } from "@neup/components/ui/card";
 import { Briefcase, Landmark, Mountain, Plane, Tag, TrendingUp, ArrowRight } from "lucide-react";
 import { Button } from "@neup/components/ui/button";
+import { LinkButton } from '@neup/components/ui/link-button';
 import Link from "next/link";
 import Image from 'next/image';
 
@@ -70,12 +71,10 @@ export function OurClients() {
                 </div>
                 {client.slug && (
                   <div className="mt-auto pt-4 border-t border-border">
-                    <Button asChild variant="link" className="p-0 h-auto">
-                      <Link href={`/case/${client.slug}`}>
+                    <LinkButton variant="link" className="p-0 h-auto" href={`/case/${client.slug}`}>
                         Read Case
                         <ArrowRight className="ml-2 h-4 w-4" />
-                      </Link>
-                    </Button>
+                      </LinkButton>
                   </div>
                 )}
               </CardContent>
@@ -86,3 +85,5 @@ export function OurClients() {
     </section>
   );
 }
+
+undefined

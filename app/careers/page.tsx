@@ -1,6 +1,7 @@
 
 import type { Metadata } from 'next';
 import { Button } from "@neup/components/ui/button";
+import { LinkButton } from '@neup/components/ui/link-button';
 import { Card, CardContent, CardHeader, CardTitle } from "@neup/components/ui/card";
 import { CheckCircle, ArrowRight, Briefcase, BookOpen, Sparkles, Code, Lightbulb, Users } from "lucide-react";
 import Link from "next/link";
@@ -64,12 +65,10 @@ export default function CareersPage() {
                       Neup.Careers connects ambitious talent with real work, mentorship, and growth opportunities across Neup Group ventures.
                     </p>
                     <div className="mt-8">
-                      <Button size="lg" asChild>
-                        <Link href="#opportunities">
+                      <LinkButton size="lg" href="#opportunities">
                             Explore Opportunities
                             <ArrowRight className="ml-2" />
-                        </Link>
-                      </Button>
+                        </LinkButton>
                     </div>
                 </div>
                  <div className="flex justify-center">
@@ -222,12 +221,10 @@ export default function CareersPage() {
              Explore opportunities to grow your skills and your career within the Neup ecosystem.
             </p>
             <div className="mt-8">
-              <Button size="lg" asChild>
-                <Link href="#opportunities">
+              <LinkButton size="lg" href="#opportunities">
                   Explore Open Roles
                   <ArrowRight className="ml-2" />
-                </Link>
-              </Button>
+                </LinkButton>
             </div>
           </div>
         </section>
@@ -235,3 +232,7 @@ export default function CareersPage() {
     </div>
   );
 }
+
+undefined
+undefined
+undefined

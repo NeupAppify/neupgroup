@@ -1,4 +1,5 @@
 import { Button } from "@neup/components/ui/button";
+import { LinkButton } from '@neup/components/ui/link-button';
 import Link from "next/link";
 import { Handshake, Briefcase } from "lucide-react";
 
@@ -14,21 +15,21 @@ export function Partnerships() {
             Whether you are an early believer, a strategic partner, or exceptional talent, there's a place for you at Neup Group.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg">
-              <Link href="mailto:partner@neup.group">
+            <LinkButton size="lg" href="mailto:partner@neup.group">
                 <Handshake className="mr-2 h-5 w-5" />
                 Partner With Us
-              </Link>
-            </Button>
-            <Button asChild variant="secondary" size="lg">
-              <Link href="mailto:careers@neup.group">
+              </LinkButton>
+            <LinkButton variant="secondary" size="lg" href="mailto:careers@neup.group">
                 <Briefcase className="mr-2 h-5 w-5" />
                 Explore Careers
-              </Link>
-            </Button>
+              </LinkButton>
           </div>
         </div>
       </div>
     </section>
   );
 }
+
+undefined
+undefined
+undefined

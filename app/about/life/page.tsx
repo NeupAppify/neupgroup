@@ -1,9 +1,8 @@
 
 import type { Metadata } from 'next';
-import { Button } from "@neup/components/ui/button";
+import { LinkButton } from "@neup/components/ui/link-button";
 import { Card, CardContent, CardHeader, CardTitle } from "@neup/components/ui/card";
 import { Brain, Laugh, Users, Lightbulb, TrendingUp, Calendar, CheckCircle, ArrowRight } from "lucide-react";
-import Link from "next/link";
 import Image from "next/image";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@neup/components/ui/carousel';
 
@@ -84,9 +83,7 @@ export default function LifeAtNeupPage() {
                   Arrive. Do your work. Have some fun. Leave. Repeat.
                 </p>
                 <div className="mt-8">
-                  <Button size="lg" asChild>
-                    <Link href="/careers">Join the Team</Link>
-                  </Button>
+                  <LinkButton href="/careers" size="lg">Join the Team</LinkButton>
                 </div>
             </div>
           </div>
@@ -180,12 +177,10 @@ export default function LifeAtNeupPage() {
                 Ready to join us?
             </p>
             <div className="mt-8">
-              <Button size="lg" asChild>
-                <Link href="/careers">
+              <LinkButton href="/careers" size="lg">
                   Explore Careers
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
+              </LinkButton>
             </div>
           </div>
         </section>

@@ -4,6 +4,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Button } from '@neup/components/ui/button';
+import { LinkButton } from '@neup/components/ui/link-button';
 import { NeupLogo } from '@/components/NeupLogo';
 import { ventures } from '@/components/sections/VenturePortfolio.config';
 import { useTypewriter } from '@neup/core/hooks/useTypewritter';
@@ -105,11 +106,9 @@ export function Header() {
         {/* Right Section: Actions */}
         <div className="flex items-center justify-end space-x-2">
           <div className="hidden md:flex items-center space-x-2">
-            <Button asChild>
-              <Link href="/account">
+            <LinkButton href="/account">
                 Get Inside
-              </Link>
-            </Button>
+              </LinkButton>
           </div>
           <div className="md:hidden">
             <MobileNav />
@@ -119,3 +118,5 @@ export function Header() {
     </header>
   );
 }
+
+undefined

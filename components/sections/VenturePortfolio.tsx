@@ -1,6 +1,6 @@
-
 'use client';
 
+import { LinkButton } from '@neup/components/ui/link-button';
 import { Badge } from "@neup/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@neup/components/ui/card";
 import { ArrowUpRight } from 'lucide-react';
@@ -8,6 +8,7 @@ import Link from "next/link";
 import { ventures, type Venture } from '@/components/sections/VenturePortfolio.config';
 import { useState, useEffect } from "react";
 import { Button } from "@neup/components/ui/button";
+
 
 
 const statusStyles: { [key: string]: string } = {
@@ -66,14 +67,14 @@ export function VenturePortfolio() {
           ))}
         </div>
         <div className="mt-12 text-center">
-            <Button asChild variant="outline">
-                <Link href="/about/ventures">
+            <LinkButton variant="outline" href="/about/ventures">
                     View All Ventures
                     <ArrowUpRight className="ml-2 h-4 w-4" />
-                </Link>
-            </Button>
+                </LinkButton>
         </div>
       </div>
     </section>
   );
 }
+
+undefined

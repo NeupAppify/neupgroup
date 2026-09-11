@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Button } from "@neup/components/ui/button";
+import { LinkButton } from '@neup/components/ui/link-button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@neup/components/ui/card";
 import { Check, Shield, Zap, Inbox, Lock, ArrowRight } from "lucide-react";
 import Link from "next/link";
@@ -76,9 +77,7 @@ export default function MailPage() {
                         Experience a new standard in email communication. Private, secure, and designed for focus. No ads, no trackers, just pure email.
                     </p>
                     <div className="flex justify-start gap-4">
-                        <Button size="lg" asChild>
-                            <Link href="#pricing">Get Your Private Email</Link>
-                        </Button>
+                        <LinkButton size="lg" href="#pricing">Get Your Private Email</LinkButton>
                     </div>
                 </div>
                 <div className="flex justify-center">
@@ -170,12 +169,10 @@ export default function MailPage() {
               Join the growing community of users who choose privacy. Create your free Neup.Mail account today.
             </p>
             <div className="mt-8">
-              <Button size="lg" asChild>
-                <Link href="#pricing">
+              <LinkButton size="lg" href="#pricing">
                   Sign Up Now
                   <ArrowRight className="ml-2" />
-                </Link>
-              </Button>
+                </LinkButton>
             </div>
           </div>
         </section>
@@ -183,3 +180,7 @@ export default function MailPage() {
     </div>
   );
 }
+
+undefined
+undefined
+undefined

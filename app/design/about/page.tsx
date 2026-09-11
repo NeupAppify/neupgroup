@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Button } from "@neup/components/ui/button";
+import { LinkButton } from '@neup/components/ui/link-button';
 import { Card, CardContent, CardHeader, CardTitle } from "@neup/components/ui/card";
 import { CheckCircle, Palette, Figma, Layers, Lightbulb, PenTool, ArrowRight, Dribbble, Clapperboard } from "lucide-react";
 import Link from "next/link";
@@ -59,12 +60,8 @@ export default function DesignPage() {
                       Neup.Design is a product and brand design studio. We partner with ambitious companies to build meaningful brands and user-centric products.
                     </p>
                     <div className="mt-8 flex justify-start gap-4">
-                      <Button size="lg" asChild>
-                        <Link href="mailto:design@neup.group">Start a Project</Link>
-                      </Button>
-                      <Button size="lg" variant="outline" asChild>
-                        <Link href="#services">Our Services</Link>
-                      </Button>
+                      <LinkButton size="lg" href="mailto:design@neup.group">Start a Project</LinkButton>
+                      <LinkButton size="lg" variant="outline" href="#services">Our Services</LinkButton>
                     </div>
                 </div>
                  <div className="flex justify-center">
@@ -182,12 +179,10 @@ export default function DesignPage() {
               Let's work together to create something exceptional.
             </p>
             <div className="mt-8">
-              <Button size="lg" asChild>
-                <Link href="mailto:design@neup.group">
+              <LinkButton size="lg" href="mailto:design@neup.group">
                   Start a Conversation
                   <ArrowRight className="ml-2" />
-                </Link>
-              </Button>
+                </LinkButton>
             </div>
           </div>
         </section>
@@ -195,3 +190,9 @@ export default function DesignPage() {
     </div>
   );
 }
+
+undefined
+undefined
+undefined
+undefined
+undefined

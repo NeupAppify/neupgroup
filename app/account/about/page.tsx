@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Button } from "@neup/components/ui/button";
+import { LinkButton } from '@neup/components/ui/link-button';
 import { Card, CardContent, CardHeader, CardTitle } from "@neup/components/ui/card";
 import { CheckCircle, KeyRound, ShieldCheck, Link2, Settings, ArrowRight, UserCheck } from "lucide-react";
 import Link from "next/link";
@@ -66,12 +67,8 @@ export default function NeupAccountPage() {
                   Neup.Account is a secure, unified login system that gives you seamless access across the Neup ecosystem — without friction.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-4">
-                  <Button size="lg" asChild>
-                    <Link href="/account/auth/start">Create Your Neup.Account</Link>
-                  </Button>
-                  <Button size="lg" variant="outline" asChild>
-                    <Link href="#how-it-works">Learn How It Works</Link>
-                  </Button>
+                  <LinkButton size="lg" href="/account/auth/start">Create Your Neup.Account</LinkButton>
+                  <LinkButton size="lg" variant="outline" href="#how-it-works">Learn How It Works</LinkButton>
                 </div>
               </div>
               <div className="flex justify-center">
@@ -222,12 +219,10 @@ export default function NeupAccountPage() {
               Create your Neup.Account and access everything — seamlessly.
             </p>
             <div className="mt-8">
-              <Button size="lg" asChild>
-                <Link href="/account/auth/start">
+              <LinkButton size="lg" href="/account/auth/start">
                   Create Your Neup.Account
                   <ArrowRight className="ml-2" />
-                </Link>
-              </Button>
+                </LinkButton>
             </div>
           </div>
         </section>
@@ -235,3 +230,9 @@ export default function NeupAccountPage() {
     </div>
   );
 }
+
+undefined
+undefined
+undefined
+undefined
+undefined

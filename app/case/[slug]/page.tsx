@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { caseStudies, getCaseStudyBySlug, getAllCaseStudySlugs } from '@/app/case/case-studies';
 import { Card, CardContent, CardHeader, CardTitle } from '@neup/components/ui/card';
 import { Button } from '@neup/components/ui/button';
+import { LinkButton } from '@neup/components/ui/link-button';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
@@ -70,12 +71,10 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
                     <h3 className="font-headline text-2xl font-bold mb-4">Related Links</h3>
                     <div className="flex flex-col gap-4 items-start">
                         {caseStudy.backlinks.map(link => (
-                            <Button asChild variant="link" className="p-0 text-base h-auto" key={link.url}>
-                                <a href={link.url} target="_blank" rel="noopener noreferrer">
+                            <LinkButton href={link.url} variant="link" className="p-0 text-base h-auto" key={link.url} target="_blank" rel="noopener noreferrer">
                                     {link.text}
                                     <ArrowRight className="w-4 h-4 ml-2" />
-                                </a>
-                            </Button>
+                            </LinkButton>
                         ))}
                     </div>
                 </div>

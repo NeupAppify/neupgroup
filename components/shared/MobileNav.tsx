@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Button } from '@neup/components/ui/button';
+import { LinkButton } from '@neup/components/ui/link-button';
 import { cn } from '@neup/core/utils';
 
 const navLinks = [
@@ -130,9 +131,7 @@ export function MobileNav() {
                 transitionDelay: isOpen ? `${80 + navLinks.length * 40}ms` : '0ms',
               }}
             >
-              <Button asChild className="h-12 w-full text-base" size="lg" onClick={() => setIsOpen(false)}>
-                <Link href="/account">Get Inside</Link>
-              </Button>
+              <LinkButton href="/account" className="h-12 w-full text-base" size="lg" onClick={() => setIsOpen(false)}>Get Inside</LinkButton>
             </div>
           </div>
         ) : null}

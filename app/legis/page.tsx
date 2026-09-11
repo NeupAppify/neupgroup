@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Button } from "@neup/components/ui/button";
+import { LinkButton } from '@neup/components/ui/link-button';
 import { Card, CardContent, CardHeader, CardTitle } from "@neup/components/ui/card";
 import { CheckCircle, ArrowRight, Scale, FileText, Search, History, Users, Briefcase, GraduationCap } from "lucide-react";
 import Link from "next/link";
@@ -73,12 +74,8 @@ export default function LegisPage() {
                 Neup.Legis turns complex laws into clear, structured, and searchable knowledge for businesses, students, and citizens.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
-                <Button size="lg" asChild>
-                  <Link href="#capabilities">Explore Laws & Regulations</Link>
-                </Button>
-                <Button size="lg" variant="ghost" asChild>
-                  <Link href="#how-it-works">How Neup.Legis Works</Link>
-                </Button>
+                <LinkButton size="lg" href="#capabilities">Explore Laws & Regulations</LinkButton>
+                <LinkButton size="lg" variant="ghost" href="#how-it-works">How Neup.Legis Works</LinkButton>
               </div>
             </div>
           </div>
@@ -210,12 +207,10 @@ export default function LegisPage() {
               Understand the Law. Act With Clarity.
             </h2>
             <div className="mt-8">
-              <Button size="lg" asChild>
-                <Link href="#capabilities">
+              <LinkButton size="lg" href="#capabilities">
                   Start Exploring Neup.Legis
                   <ArrowRight className="ml-2" />
-                </Link>
-              </Button>
+                </LinkButton>
             </div>
           </div>
         </section>
@@ -223,3 +218,9 @@ export default function LegisPage() {
     </div>
   );
 }
+
+undefined
+undefined
+undefined
+undefined
+undefined

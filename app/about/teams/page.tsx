@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import { logica } from '@/logica';
-import type { SitesMemberDirectoryItem } from '@/logica/sites';
+import { logica } from '@neup/logica';
+import type { SitesMemberDirectoryItem } from '@neup/logica/sites';
 
 export const metadata: Metadata = {
   title: 'Our Team',

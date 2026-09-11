@@ -4,6 +4,7 @@ import { ArrowRight, Blocks, Code2, FlaskConical, ShieldCheck, TerminalSquare } 
 
 import { Badge } from '@neup/components/ui/badge';
 import { Button } from '@neup/components/ui/button';
+import { LinkButton } from '@neup/components/ui/link-button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@neup/components/ui/card';
 
 export const metadata: Metadata = {
@@ -59,15 +60,11 @@ export default function DevPage() {
               </p>
             </div>
             <div className="flex flex-wrap gap-4">
-              <Button asChild size="lg">
-                <Link href="/dev/documentation">
+              <LinkButton size="lg" href="/dev/documentation">
                   Open Documentation
                   <ArrowRight />
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="outline">
-                <Link href="/manage">Open Management</Link>
-              </Button>
+                </LinkButton>
+              <LinkButton size="lg" variant="outline" href="/manage">Open Management</LinkButton>
             </div>
           </div>
         </div>
@@ -121,3 +118,7 @@ export default function DevPage() {
     </div>
   );
 }
+
+undefined
+undefined
+undefined
