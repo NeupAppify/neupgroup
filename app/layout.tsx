@@ -27,7 +27,14 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-        <script async src="http://localhost:26259/sdk.js" data-site-id="cmps3fj9b00000r9kldlycfiu" data-collect="pageview,clicks,scrolls,inputs,errors,performance,dom"></script>
+        <script
+          async
+          src="https://neupgroup.com/analytics/bridge/sdk.v1/record"
+          data-project-id="cmtx8ocvh0000bup9m18a09z1"
+          data-endpoint="https://neupgroup.com/analytics/bridge/webhook.v1/activity?project=cmtx8ocvh0000bup9m18a09z1"
+          data-mode="activity"
+          data-collect="pageview,requests"
+        ></script>
       </head>
       <body className={cn('font-body antialiased')}>
         <ThemeProvider>

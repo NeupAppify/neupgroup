@@ -1,20 +1,22 @@
 import type { Metadata } from 'next';
 import { logica } from '@neup/logica';
-import type { SitesMemberDirectoryItem } from '@neup/logica/sites';
+import type { SitesMemberDirectoryItem, SitesMemberListResponseBody } from '@neup/logica/sites';
 
 export const metadata: Metadata = {
   title: 'Our Team',
 };
 
 async function getTeamMembers(): Promise<SitesMemberDirectoryItem[]> {
-
   try {
     const response = await logica.sites().members.get();
-    const body = response.body as SitesMemberDirectoryItem[] | { data?: SitesMemberDirectoryItem[] };
-    const members = Array.isArray(body) ? body : body?.data;
+    const body = response.body as SitesMemberListResponseBody;
 
-    return Array.isArray(members) ? members : [];
-  } catch {
+    if (response.ok && body.success && Array.isArray(body.data)) {
+      return body.data;
+    }
+
+    return [];
+  } catch (error) {
     return [];
   }
 }
