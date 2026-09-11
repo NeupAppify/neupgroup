@@ -10,7 +10,8 @@ async function getTeamMembers(): Promise<SitesMemberDirectoryItem[]> {
 
   try {
     const response = await logica.sites().members.get();
-    const members = response.body?.data;
+    const body = response.body as SitesMemberDirectoryItem[] | { data?: SitesMemberDirectoryItem[] };
+    const members = Array.isArray(body) ? body : body?.data;
 
     return Array.isArray(members) ? members : [];
   } catch {
