@@ -1,15 +1,7 @@
-"use client";
+import type { UserProfile } from "@/lib/session";
 
-import { useSession } from "@/components/providers/SessionProvider";
-
-export function HomeWelcome() {
-  const { user, loading, isAuthenticated } = useSession();
-
-  if (loading || !user) {
-    return null;
-  }
-
-  if (!isAuthenticated || !user.displayName) {
+export function HomeWelcome({ user }: { user: UserProfile | null }) {
+  if (!user || user.accountType === "guest" || !user.neupId || !user.displayName) {
     return null;
   }
 

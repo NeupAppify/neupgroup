@@ -1,20 +1,10 @@
-"use client";
-
 import { Button } from "@neup/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@neup/components/ui/avatar";
-import { useSession } from "@/components/providers/SessionProvider";
+import type { UserProfile } from "@/lib/session";
 import Link from "next/link";
 
-export function UserAuthButton() {
-    const { user, loading, isAuthenticated } = useSession();
-
-    if (loading) {
-        return (
-            <Button variant="outline" className="w-[120px] opacity-50" disabled>
-                Loading...
-            </Button>
-        );
-    }
+export function UserAuthButton({ user }: { user: UserProfile | null }) {
+    const isAuthenticated = !!user && user.accountType !== "guest" && !!user.neupId;
 
     if (user && isAuthenticated) {
         const fallbackInitial = (user.displayName || user.neupId || "U").charAt(0).toUpperCase();
