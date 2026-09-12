@@ -10,7 +10,7 @@ import { cn } from '@neup/core/utils';
 const navLinks = [
   { href: '/about/ventures', label: 'Ventures' },
   { href: '/#vision', label: 'Vision' },
-  { href: '/about/teams', label: 'Team' },
+  { href: '/about/team', label: 'Team' },
   { href: '/contact', label: 'Contact' },
 ];
 

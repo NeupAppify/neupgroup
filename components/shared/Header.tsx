@@ -4,7 +4,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Button } from '@neup/components/ui/button';
-import { LinkButton } from '@neup/components/ui/link-button';
+import { UserNav } from '@neup/components/ui/user-nav';
 import { NeupLogo } from '@/components/NeupLogo';
 import { ventures } from '@/components/sections/VenturePortfolio.config';
 import { useTypewriter } from '@neup/core/hooks/useTypewritter';
@@ -90,7 +90,7 @@ export function Header() {
             Vision
           </Link>
           <Link
-            href="/about/teams"
+            href="/about/team"
             className="transition-colors hover:text-foreground/80 text-foreground/60"
           >
             Team
@@ -106,9 +106,7 @@ export function Header() {
         {/* Right Section: Actions */}
         <div className="flex items-center justify-end space-x-2">
           <div className="hidden md:flex items-center space-x-2">
-            <LinkButton href="/account">
-                Get Inside
-              </LinkButton>
+            <UserNav />
           </div>
           <div className="md:hidden">
             <MobileNav />

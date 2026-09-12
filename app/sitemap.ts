@@ -6,7 +6,7 @@ const URL = 'https://neupgroup.com';
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     '/',
-    '/about/teams',
+    '/about/team',
     '/about/ventures',
     '/about/life',
     '/ads/about',

@@ -8,6 +8,7 @@ import { Header } from '@/components/shared/Header';
 import { Footer } from '@/components/shared/Footer';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import RootLayoutShell from '@neup/components/layout/RootLayout';
+import { SessionProvider } from '@neup/core/providers/session';
 
 export const metadata: Metadata = {
   title: {
@@ -41,11 +42,13 @@ export default async function RootLayout({
 
       <body className={cn('font-body antialiased')}>
         <ThemeProvider>
-          <RootLayoutShell>
-            <Header />
-            <main>{children}</main>
-            <Footer />
-          </RootLayoutShell>
+          <SessionProvider>
+            <RootLayoutShell>
+              <Header />
+              <main>{children}</main>
+              <Footer />
+            </RootLayoutShell>
+          </SessionProvider>
         </ThemeProvider>
 
         <script
