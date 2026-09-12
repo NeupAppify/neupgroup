@@ -78,7 +78,7 @@ export function Header() {
         {/* Center Section: Navigation */}
         <nav className="hidden items-center gap-6 text-sm md:flex">
           <Link
-            href="/#ventures"
+            href="/about/ventures"
             className="transition-colors hover:text-foreground/80 text-foreground/60"
           >
             Ventures
@@ -96,7 +96,7 @@ export function Header() {
             Team
           </Link>
           <Link
-            href="/#contact"
+            href="/contact"
             className="transition-colors hover:text-foreground/80 text-foreground/60"
           >
             Contact

@@ -8,10 +8,10 @@ import { LinkButton } from '@neup/components/ui/link-button';
 import { cn } from '@neup/core/utils';
 
 const navLinks = [
-  { href: '/#ventures', label: 'Ventures' },
+  { href: '/about/ventures', label: 'Ventures' },
   { href: '/#vision', label: 'Vision' },
   { href: '/about/teams', label: 'Team' },
-  { href: '/#contact', label: 'Contact' },
+  { href: '/contact', label: 'Contact' },
 ];
 
 const MENU_ANIMATION_MS = 700;
