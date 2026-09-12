@@ -81,3 +81,10 @@ for repository in "${repositories[@]}"; do
     sync_repository "$repository_url" "$target_directory" "$repository_name"
   fi
 done
+
+if [[ -x "$NEUP_DIR/logica/setup.sh" ]]; then
+  "$NEUP_DIR/logica/setup.sh"
+else
+  printf 'Logica setup script was not found or is not executable.\n' >&2
+  exit 1
+fi
