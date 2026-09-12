@@ -16,6 +16,57 @@ NEUP_DOCUMENTATION
 
 readonly SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 readonly NEUP_DIR="$SCRIPT_DIR/.neup"
+readonly BASE_FILE="$SCRIPT_DIR/base.json"
+readonly ENV_FILE="$SCRIPT_DIR/.env"
+
+update_env_from_base() {
+  local app_id
+  local app_basepath
+  local logo_main
+  local favicon
+  local value
+  local key
+
+  if [[ ! -f "$BASE_FILE" ]]; then
+    printf 'Cannot update .env: %s was not found.\n' "$BASE_FILE" >&2
+    return 1
+  fi
+
+  mkdir -p -- "$(dirname -- "$ENV_FILE")"
+  touch "$ENV_FILE"
+
+  if ! IFS=$'\x1f' read -r app_id app_basepath logo_main favicon < <(node -e '
+    const fs = require("fs");
+    const base = JSON.parse(fs.readFileSync(process.argv[1], "utf8"));
+    const value = (item) => item == null ? "" : String(item);
+    process.stdout.write([
+      value(base.identity?.applicationId),
+      value(base.platforms?.web?.basepath),
+      value(base.assets?.logo?.main),
+      value(base.assets?.favicon?.path ?? base.assets?.favicon),
+    ].join("\x1f"));
+  ' "$BASE_FILE"); then
+    printf 'Unable to read application values from %s.\n' "$BASE_FILE" >&2
+    return 1
+  fi
+
+  for key in NEUP_APP_ID NEUP_APP_SECRET NEXT_PUBLIC_APP_BASEPATH APP_ASSETS_LOGO_MAIN APP_ASSETS_FAVICON; do
+    if grep -qE "^[[:space:]]*${key}[[:space:]]*=" "$ENV_FILE"; then
+      continue
+    fi
+
+    case "$key" in
+      NEUP_APP_ID) value="$app_id" ;;
+      NEUP_APP_SECRET) value="" ;;
+      NEXT_PUBLIC_APP_BASEPATH) value="$app_basepath" ;;
+      APP_ASSETS_LOGO_MAIN) value="$logo_main" ;;
+      APP_ASSETS_FAVICON) value="$favicon" ;;
+    esac
+
+    printf '%s=%q\n' "$key" "$value" >> "$ENV_FILE"
+    printf 'Added %s to .env.\n' "$key"
+  done
+}
 
 clone_repository() {
   local repository_url="$1"
@@ -64,6 +115,8 @@ for argument in "$@"; do
 done
 
 mkdir -p -- "$NEUP_DIR"
+
+update_env_from_base
 
 repositories=(
   "https://github.com/neupgroup/neup.core|$NEUP_DIR/core|neup.core"

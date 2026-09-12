@@ -3,6 +3,11 @@
   "identity": {
     "name": "Neup.Group",
     "@comment:name": "Application name used for identification.",
+    "name:translation": {
+      "en": "Neup.Group",
+      "ne": "Neup.Group"
+    },
+    "@comment:name:translation": "Application name's array translations for different languages.",
     "description": "A venture studio building the next generation of digital ventures from Nepal.",
     "@comment:description": "Description for the application owner.",
     "version": "1.0.0.00",
@@ -92,7 +97,9 @@
   "logica": {
     "requiredModules": [
       "analytics",
-      "sites"
+      "sites",
+      "notifications",
+      "account"
     ]
   },
   "permissions": [],
