@@ -16,7 +16,7 @@ NEUP_DOCUMENTATION
 
 readonly SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 readonly NEUP_DIR="$SCRIPT_DIR/.neup"
-readonly BASE_FILE="$SCRIPT_DIR/base.json"
+readonly BASE_FILE="$SCRIPT_DIR/base/application.json"
 readonly ENV_FILE="$SCRIPT_DIR/.env"
 
 update_env_from_base() {
@@ -44,7 +44,7 @@ update_env_from_base() {
       value(base.platforms?.web?.basepath),
       value(base.assets?.logo?.main),
       value(base.assets?.favicon?.path ?? base.assets?.favicon),
-    ].join("\x1f"));
+    ].join("\x1f") + "\n");
   ' "$BASE_FILE"); then
     printf 'Unable to read application values from %s.\n' "$BASE_FILE" >&2
     return 1
