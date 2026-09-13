@@ -7,6 +7,9 @@
     --theme-h: 0;
     --theme-s: 0%;
     --theme-l: 9%;
+    --footer-background: hsl(0 0% 12%);
+    --section-odd-background: hsl(0 0% 100%);
+    --section-even-background: hsl(0 0% 96%);
 
     /* Light Theme Defaults */
     --background-light: 0 0% 100%;
@@ -162,12 +165,12 @@
 
   main > section:nth-of-type(odd),
   main > div > section:nth-of-type(odd) {
-    background-color: #ffffff;
+    background-color: var(--section-odd-background);
   }
 
   main > section:nth-of-type(even),
   main > div > section:nth-of-type(even) {
-    background-color: #f5f5f5;
+    background-color: var(--section-even-background);
   }
 
   footer,
@@ -181,6 +184,11 @@
 
   footer .text-muted-foreground {
     color: #cbd5e1 !important;
+  }
+
+  footer a:hover {
+    text-decoration-line: underline;
+    text-underline-offset: 3px;
   }
 }
 

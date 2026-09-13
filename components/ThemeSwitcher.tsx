@@ -1,9 +1,6 @@
 
 'use client';
 import { useState, useEffect } from 'react';
-import { Paintbrush } from 'lucide-react';
-import { Button } from '@neup/components/ui/button';
-import { Popover, PopoverContent, PopoverTrigger } from '@neup/components/ui/popover';
 import { useTheme } from '@/components/ThemeProvider';
 
 const colors = [
@@ -36,30 +33,27 @@ export function ThemeSwitcher() {
     setMounted(true);
   }, []);
 
+  if (!mounted) return null;
+
   return (
-    <Popover>
-      <PopoverTrigger asChild>
-        <Button variant="ghost" size="icon">
-          <Paintbrush className="h-5 w-5" />
-          <span className="sr-only">Switch Theme</span>
-        </Button>
-      </PopoverTrigger>
-      {mounted && (
-        <PopoverContent className="w-auto p-4">
-          <div className="grid grid-cols-5 gap-2">
-            {colors.map((color) => (
-              <button
-                key={color}
-                className={`h-8 w-8 rounded-full border-2 ${
-                  themeColor === color ? 'border-primary' : 'border-transparent'
-                }`}
-                style={{ backgroundColor: color }}
-                onClick={() => setThemeColor(color)}
-              />
-            ))}
-          </div>
-        </PopoverContent>
-      )}
-    </Popover>
+    <div className="flex flex-wrap items-center gap-3" aria-label="Theme colors">
+      {colors.map((color) => (
+        <button
+          key={color}
+          type="button"
+          aria-label={`Use ${color} theme`}
+          aria-pressed={themeColor === color}
+          className={`h-9 w-9 rounded-full border-2 p-0.5 transition-all ${
+            themeColor === color ? 'border-primary ring-2 ring-primary/30' : 'border-transparent'
+          }`}
+          onClick={() => setThemeColor(color)}
+        >
+          <span
+            className="block h-full w-full rounded-full border border-black/10"
+            style={{ backgroundColor: color }}
+          />
+        </button>
+      ))}
+    </div>
   );
 }

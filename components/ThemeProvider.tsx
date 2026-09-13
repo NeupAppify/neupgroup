@@ -66,6 +66,9 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
         root.style.setProperty('--theme-h', `${h}`);
         root.style.setProperty('--theme-s', `${s}%`);
         root.style.setProperty('--theme-l', `${l}%`);
+        root.style.setProperty('--footer-background', `hsl(${h} ${s}% ${Math.max(l - 45, 12)}%)`);
+        root.style.setProperty('--section-odd-background', `hsl(${h} ${s}% 98%)`);
+        root.style.setProperty('--section-even-background', `hsl(${h} ${s}% 94%)`);
         
         // Light theme
         if (themeColor === '#000000') {

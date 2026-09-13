@@ -22,7 +22,10 @@ export function Footer() {
 
 
   return (
-    <footer className="border-t py-16 bg-[rgb(19,26,34)] text-white">
+    <footer
+      className="border-t py-16 text-white"
+      style={{ backgroundColor: 'var(--footer-background)' }}
+    >
       <div className="container max-w-screen-2xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-4">
@@ -58,6 +61,11 @@ export function Footer() {
                 <li><Link href="/about/life" className="text-muted-foreground hover:text-primary">Life at Neup</Link></li>
                 <li><Link href="/blog" className="text-muted-foreground hover:text-primary">Blog</Link></li>
                 <li><Link href="/case" className="text-muted-foreground hover:text-primary">Case Studies</Link></li>
+                <li className="text-muted-foreground">
+                  <Link href="/theme" className="hover:text-primary">Theme</Link>
+                  <span> and </span>
+                  <Link href="/accessibility" className="hover:text-primary">accessibility</Link>
+                </li>
               </ul>
             </div>
              <div>
