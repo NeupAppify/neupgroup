@@ -4,7 +4,8 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Button } from '@neup/components/ui/button';
-import { UserNav } from '@neup/components/ui/user-nav';
+import { Userbar } from '@neup/components/element/userbar';
+import { useSession } from '@neup/core/providers/session';
 import { NeupLogo } from '@/components/NeupLogo';
 import { ventures } from '@/components/sections/VenturePortfolio.config';
 import { useTypewriter } from '@neup/core/hooks/useTypewritter';
@@ -14,6 +15,7 @@ import { MobileNav } from './MobileNav';
 
 export function Header() {
   const pathname = usePathname();
+  const { user } = useSession();
   const [targetTitle, setTargetTitle] = useState('Neup.Group');
   const [headerLink, setHeaderLink] = useState('/');
   const [isLogoHovered, setIsLogoHovered] = useState(false);
@@ -45,6 +47,8 @@ export function Header() {
   const animatedTitle = useTypewriter(targetTitle);
 
   const isHomePage = pathname === '/';
+  const displayName = user?.displayName?.trim() || 'User';
+  const secondaryText = user?.neupId?.trim() || user?.accountId?.trim() || '';
 
   return (
     <header className="sticky top-0 z-40 w-full border-b border-border/40 bg-background/95 shadow-md backdrop-blur supports-[backdrop-filter]:bg-background/60 relative">
@@ -106,7 +110,13 @@ export function Header() {
         {/* Right Section: Actions */}
         <div className="flex items-center justify-end space-x-2">
           <div className="hidden md:flex items-center space-x-2">
-            <UserNav />
+            <Link href="/account" aria-label="Open account">
+              <Userbar
+                displayName={displayName}
+                displayImage={user?.displayImage}
+                neupid={secondaryText}
+              />
+            </Link>
           </div>
           <div className="md:hidden">
             <MobileNav />
