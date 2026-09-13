@@ -25,7 +25,7 @@ export default function VenturesPage() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-20 md:py-32 bg-card">
+        <section className="section-padding">
           <div className="container">
             <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter max-w-4xl">
               Our Ventures
@@ -37,7 +37,7 @@ export default function VenturesPage() {
         </section>
 
         {/* Ventures Grid */}
-        <section id="ventures" className="py-20 lg:py-28">
+        <section id="ventures" className="section-padding">
           <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {ventures.map((venture) => (

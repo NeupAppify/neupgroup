@@ -65,7 +65,7 @@ export default function ReferralsPage() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* 1. Hero Section */}
-        <section className="py-20 md:py-32 bg-card">
+        <section className="section-padding">
           <div className="container text-center max-w-4xl">
               <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter">
                 Turn Connections into Rewards – Earn 5% for Every Referral
@@ -80,7 +80,7 @@ export default function ReferralsPage() {
         </section>
 
         {/* 2. How It Works Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
           <div className="container max-w-5xl">
             <div className="text-center mb-16">
               <h2 className="font-headline text-3xl md:text-4xl font-bold">How It Works</h2>
@@ -101,7 +101,7 @@ export default function ReferralsPage() {
         </section>
 
         {/* 3. Why Join Section */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
             <div className="container">
                 <div className="text-center mb-12">
                     <h2 className="font-headline text-3xl md:text-4xl font-bold">Why Join Our Referral Program?</h2>
@@ -119,7 +119,7 @@ export default function ReferralsPage() {
         </section>
 
         {/* 4. Get Started Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
           <div className="container max-w-3xl text-center">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">
               Get Started Today
@@ -139,7 +139,7 @@ export default function ReferralsPage() {
         </section>
         
         {/* 5. Testimonial Section */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
             <div className="container max-w-2xl">
                 <Card className="bg-background">
                     <CardContent className="p-8 text-center space-y-4">

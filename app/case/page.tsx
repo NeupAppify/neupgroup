@@ -15,7 +15,7 @@ export default function CaseStudiesPage() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-20 md:py-32 bg-card">
+        <section className="section-padding">
           <div className="container">
             <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter max-w-4xl">
               Case Studies
@@ -27,7 +27,7 @@ export default function CaseStudiesPage() {
         </section>
 
         {/* Case Studies Grid */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
           <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {caseStudies.map((study) => (

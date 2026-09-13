@@ -83,7 +83,7 @@ export default function AnalyticsPage() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* 1. Hero Section */}
-        <section className="py-20 md:py-32 bg-card">
+        <section className="section-padding">
           <div className="container">
              <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
@@ -114,7 +114,7 @@ export default function AnalyticsPage() {
         </section>
 
         {/* 2. Key Features Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container">
                 <div className="text-center mb-12">
                     <h2 className="font-headline text-3xl md:text-4xl font-bold">Insights That Drive Results</h2>
@@ -136,7 +136,7 @@ export default function AnalyticsPage() {
         </section>
 
         {/* 3. How It Works Section */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
           <div className="container max-w-5xl">
             <div className="text-center mb-16">
               <h2 className="font-headline text-3xl md:text-4xl font-bold">From Data to Decisions in 3 Steps</h2>
@@ -157,7 +157,7 @@ export default function AnalyticsPage() {
         </section>
 
         {/* 4. Benefits Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container">
                  <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
@@ -177,7 +177,7 @@ export default function AnalyticsPage() {
         </section>
 
         {/* 5. Testimonials Section */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
             <div className="container max-w-4xl">
                 <div className="text-center mb-12">
                     <h2 className="font-headline text-3xl md:text-4xl font-bold">Businesses Trust Neup.Analytics</h2>
@@ -208,7 +208,7 @@ export default function AnalyticsPage() {
         </section>
 
         {/* 6. Call-to-Action Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
           <div className="container max-w-3xl text-center">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">
               Make Smarter Decisions Today

@@ -17,7 +17,7 @@ export default async function MemberPage({ params }: { params: Promise<{ slug: s
   if (!member) notFound();
 
   return (
-    <main className="container py-20 md:py-28">
+    <main className="container section-padding">
       <Link href="/about/team" className="text-sm text-muted-foreground hover:text-foreground">← Back to team</Link>
       <div className="mt-10 max-w-2xl">
         <div className="flex aspect-square w-full max-w-sm items-center justify-center overflow-hidden rounded-lg bg-primary/10 text-7xl font-bold text-primary/60">

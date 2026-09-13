@@ -71,7 +71,7 @@ export default function HeritagePage() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* 1. Hero Section */}
-        <section className="relative py-20 md:py-32 bg-card">
+        <section className="relative section-padding">
           <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent"></div>
            <Image 
             src="https://picsum.photos/seed/heritage-hero/1920/1080"
@@ -101,7 +101,7 @@ export default function HeritagePage() {
         </section>
 
         {/* 2. How It Works Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container">
                 <div className="text-center mb-12">
                     <h2 className="font-headline text-3xl md:text-4xl font-bold">Preserve, Connect, Share in 3 Simple Steps</h2>
@@ -119,7 +119,7 @@ export default function HeritagePage() {
         </section>
 
         {/* 3. Features Section */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
             <div className="container">
                 <div className="text-center mb-12">
                     <h2 className="font-headline text-3xl md:text-4xl font-bold">Tools to Keep Your Heritage Alive</h2>
@@ -141,7 +141,7 @@ export default function HeritagePage() {
         </section>
 
         {/* 4. Community & Stories Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container max-w-4xl">
                 <div className="text-center mb-12">
                     <h2 className="font-headline text-3xl md:text-4xl font-bold">Stories That Connect Generations</h2>
@@ -172,7 +172,7 @@ export default function HeritagePage() {
         </section>
 
         {/* 5. Call-to-Action Section */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
           <div className="container max-w-3xl text-center">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">
               Start Preserving Your Family Legacy Today

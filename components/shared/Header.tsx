@@ -88,12 +88,6 @@ export function Header() {
             Ventures
           </Link>
           <Link
-            href="/#vision"
-            className="transition-colors hover:text-foreground/80 text-foreground/60"
-          >
-            Vision
-          </Link>
-          <Link
             href="/about/team"
             className="transition-colors hover:text-foreground/80 text-foreground/60"
           >

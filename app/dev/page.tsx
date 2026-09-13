@@ -44,7 +44,7 @@ export default function DevPage() {
   return (
     <div className="bg-gradient-to-b from-background via-background to-card">
       <section className="border-b border-border/60">
-        <div className="container py-20 md:py-28">
+        <div className="container section-padding">
           <div className="max-w-4xl space-y-8">
             <Badge variant="outline" className="gap-2 px-3 py-1 text-xs uppercase tracking-[0.24em]">
               <TerminalSquare className="h-3.5 w-3.5" />

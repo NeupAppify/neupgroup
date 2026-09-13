@@ -80,7 +80,7 @@ export default function SuitePage() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* 1. Hero Section */}
-        <section className="py-20 md:py-32 bg-card">
+        <section className="section-padding">
           <div className="container">
              <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
@@ -111,7 +111,7 @@ export default function SuitePage() {
         </section>
         
         {/* 2. Why Neup.Suite Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container">
                 <div className="text-center mb-12">
                     <h2 className="font-headline text-3xl md:text-4xl font-bold">Why Choose Neup.Suite?</h2>
@@ -133,7 +133,7 @@ export default function SuitePage() {
         </section>
 
         {/* 3. How It Works Section */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
           <div className="container max-w-5xl">
             <div className="text-center mb-16">
               <h2 className="font-headline text-3xl md:text-4xl font-bold">Run Your Business Smarter in 3 Steps</h2>
@@ -154,7 +154,7 @@ export default function SuitePage() {
         </section>
 
         {/* 4. Modules Showcase Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container">
                 <div className="text-center mb-12">
                     <h2 className="font-headline text-3xl md:text-4xl font-bold">Everything You Need, Integrated</h2>
@@ -188,7 +188,7 @@ export default function SuitePage() {
         </section>
         
         {/* 5. Testimonials Section */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
             <div className="container max-w-4xl">
                 <div className="text-center mb-12">
                     <h2 className="font-headline text-3xl md:text-4xl font-bold">Trusted by Businesses Across Nepal</h2>
@@ -219,7 +219,7 @@ export default function SuitePage() {
         </section>
 
         {/* 6. Call-to-Action Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
           <div className="container max-w-3xl text-center">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">
               Unify Your Business Operations Today

@@ -54,7 +54,7 @@ export default function JobsPage() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-20 md:py-32 lg:py-40 bg-card">
+        <section className="section-padding">
           <div className="container">
             <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
@@ -86,7 +86,7 @@ export default function JobsPage() {
         </section>
 
         {/* Why Neup.Jobs Exists */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container max-w-4xl">
                 <h2 className="font-headline text-3xl md:text-4xl font-bold">
                     Why We Built This
@@ -101,7 +101,7 @@ export default function JobsPage() {
         </section>
 
         {/* What You'll Find Here */}
-        <section id="opportunities" className="py-20 md:py-28 bg-card">
+        <section id="opportunities" className="section-padding">
           <div className="container">
             <div className="text-center mb-12">
               <h2 className="font-headline text-3xl md:text-4xl font-bold">Your Path to Growth</h2>
@@ -126,7 +126,7 @@ export default function JobsPage() {
         </section>
 
         {/* Who This Is For */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container max-w-4xl">
                 <div>
                      <h2 className="font-headline text-3xl md:text-4xl font-bold">Who We're Looking For</h2>
@@ -148,7 +148,7 @@ export default function JobsPage() {
         </section>
         
         {/* Learning + Work */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
             <div className="container">
                 <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
                     <div className="space-y-4">
@@ -175,7 +175,7 @@ export default function JobsPage() {
         </section>
 
         {/* How It Works */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container max-w-5xl">
                 <div className="text-center mb-12">
                      <h2 className="font-headline text-3xl md:text-4xl font-bold">Our Process</h2>
@@ -199,7 +199,7 @@ export default function JobsPage() {
         </section>
 
         {/* Backed by Neup Group */}
-        <section className="py-12 bg-card">
+        <section className="section-padding">
             <div className="container">
                 <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-center">
                     <NeupLogo className="h-10 w-10 text-primary"/>
@@ -212,7 +212,7 @@ export default function JobsPage() {
         </section>
 
         {/* Final CTA */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
           <div className="container max-w-3xl text-center">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">
               Ready to Start Building?

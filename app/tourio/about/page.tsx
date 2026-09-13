@@ -67,7 +67,7 @@ export default function TourioPage() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-20 md:py-32 lg:py-40 bg-card">
+        <section className="section-padding">
           <div className="container">
             <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
@@ -103,7 +103,7 @@ export default function TourioPage() {
         </section>
         
         {/* What You Can Do */}
-        <section id="explore" className="py-20 md:py-28">
+        <section id="explore" className="section-padding">
           <div className="container">
             <div className="text-center mb-12">
               <h2 className="font-headline text-3xl md:text-4xl font-bold">What You Can Do With Neup.Tourio</h2>
@@ -128,7 +128,7 @@ export default function TourioPage() {
         </section>
 
         {/* Why Tourio is Better */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
             <div className="container">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
@@ -148,7 +148,7 @@ export default function TourioPage() {
         </section>
 
         {/* How It Works */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container max-w-5xl">
                 <div className="text-center mb-12">
                      <h2 className="font-headline text-3xl md:text-4xl font-bold">A Simple Path to Discovery</h2>
@@ -172,7 +172,7 @@ export default function TourioPage() {
         </section>
 
         {/* For Businesses */}
-        <section id="for-business" className="py-20 md:py-28 bg-card">
+        <section id="for-business" className="section-padding">
             <div className="container">
                 <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
                     <div className="flex justify-center">
@@ -209,7 +209,7 @@ export default function TourioPage() {
         </section>
 
         {/* Vision Teaser */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container max-w-4xl text-center">
                  <h2 className="font-headline text-3xl md:text-4xl font-bold">The Future is Intelligent</h2>
                  <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -230,7 +230,7 @@ export default function TourioPage() {
         </section>
 
         {/* Trust & Momentum */}
-        <section className="py-12 bg-card">
+        <section className="section-padding">
             <div className="container">
                 <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-center">
                     <NeupLogo className="h-10 w-10 text-primary"/>
@@ -243,7 +243,7 @@ export default function TourioPage() {
         </section>
 
         {/* Final CTA */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
           <div className="container max-w-3xl text-center">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">
               Ready to Explore Smarter?

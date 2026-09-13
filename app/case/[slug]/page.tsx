@@ -44,7 +44,7 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-20 md:py-32 bg-card">
+        <section className="section-padding">
           <div className="container">
             <p className="text-primary font-semibold mb-2">Case Study: {caseStudy.clientName}</p>
             <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter max-w-4xl">
@@ -59,7 +59,7 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
         </section>
 
         {/* Content Section */}
-        <section className="py-16 md:py-24">
+        <section className="section-padding">
           <div className="container max-w-4xl mx-auto">
             <div 
               className="prose prose-lg dark:prose-invert max-w-none space-y-6"
@@ -83,7 +83,7 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
         </section>
 
         {/* More Case Studies */}
-        <section className="py-16 md:py-24 bg-card">
+        <section className="section-padding">
             <div className="container">
                 <h2 className="font-headline text-3xl font-bold text-center mb-8">More Case Studies</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">

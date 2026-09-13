@@ -46,7 +46,7 @@ export default function DrivePage() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* 1. Hero Section */}
-        <section className="py-20 md:py-32 bg-card">
+        <section className="section-padding">
           <div className="container">
              <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
@@ -76,7 +76,7 @@ export default function DrivePage() {
         </section>
 
         {/* 2. Problem Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container max-w-5xl text-center">
                 <h2 className="font-headline text-3xl md:text-4xl font-bold">Cloud storage was built for files. Not for teams.</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
@@ -94,7 +94,7 @@ export default function DrivePage() {
         </section>
 
         {/* 3. Solution Section */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
           <div className="container">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
@@ -124,7 +124,7 @@ export default function DrivePage() {
         </section>
 
         {/* 4. How It Works Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container max-w-5xl">
                 <div className="text-center mb-16">
                      <h2 className="font-headline text-3xl md:text-4xl font-bold">Designed for clarity from day one</h2>
@@ -149,7 +149,7 @@ export default function DrivePage() {
         </section>
 
         {/* 5. Collaboration Section */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
           <div className="container text-center max-w-3xl">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">Collaboration without mess.</h2>
             <p className="mt-4 text-muted-foreground md:text-lg">Share files internally or externally without broken links, lost context, or permission confusion. Every file has history, ownership, and intent.</p>
@@ -163,7 +163,7 @@ export default function DrivePage() {
         </section>
 
         {/* 6. Security & Ownership */}
-        <section className="py-20 md:py-28 bg-background">
+        <section className="section-padding bg-background">
             <div className="container">
                 <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto bg-gray-900 text-gray-200 p-8 lg:p-12 rounded-lg">
                     <div className="space-y-4">
@@ -180,7 +180,7 @@ export default function DrivePage() {
         </section>
 
         {/* 7. Ecosystem Integration */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
             <div className="container max-w-4xl text-center">
                  <h2 className="font-headline text-3xl md:text-4xl font-bold">Built to work with the Neup ecosystem.</h2>
                  <p className="mt-4 text-muted-foreground md:text-lg max-w-2xl mx-auto">Neup.Drive doesn’t live alone. It connects seamlessly with how Neup Group works—today and as it scales.</p>
@@ -194,7 +194,7 @@ export default function DrivePage() {
         </section>
 
         {/* 8. Use Cases */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container">
                  <div className="text-center mb-12">
                     <h2 className="font-headline text-3xl md:text-4xl font-bold">Who it’s for</h2>
@@ -213,7 +213,7 @@ export default function DrivePage() {
         </section>
 
         {/* 9. Final CTA */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
           <div className="container max-w-3xl text-center">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">
               Stop managing files. Start running a system.

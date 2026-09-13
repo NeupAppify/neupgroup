@@ -31,7 +31,7 @@ const capabilities = [
 
 export function Capabilities() {
   return (
-    <section id="capabilities" className="py-20 lg:py-32">
+    <section id="capabilities" className="section-padding">
       <div className="container">
         <div className="text-center space-y-4 mb-12">
           <h2 className="font-headline text-3xl md:text-4xl font-bold">Our Capabilities</h2>

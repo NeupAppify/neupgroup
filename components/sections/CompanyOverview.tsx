@@ -21,7 +21,7 @@ export function CompanyOverview() {
   ];
 
   return (
-    <section id="overview" className="py-20 lg:py-32">
+    <section id="overview" className="section-padding">
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">

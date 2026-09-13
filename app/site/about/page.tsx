@@ -89,7 +89,7 @@ export default function SitePage() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* 1. Hero Section */}
-        <section className="py-20 md:py-32 bg-card">
+        <section className="section-padding">
           <div className="container">
              <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
@@ -119,7 +119,7 @@ export default function SitePage() {
         </section>
 
         {/* 2. Key Benefits Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container">
                 <div className="text-center mb-12">
                     <h2 className="font-headline text-3xl md:text-4xl font-bold">Why Choose Neup.Site?</h2>
@@ -141,7 +141,7 @@ export default function SitePage() {
         </section>
 
         {/* 3. How It Works Section */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
           <div className="container max-w-5xl">
             <div className="text-center mb-16">
               <h2 className="font-headline text-3xl md:text-4xl font-bold">Create Your Website in 3 Easy Steps</h2>
@@ -162,7 +162,7 @@ export default function SitePage() {
         </section>
 
         {/* 4. Featured Templates Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container">
                 <div className="text-center mb-12">
                     <h2 className="font-headline text-3xl md:text-4xl font-bold">Websites Designed for Every Purpose</h2>
@@ -192,7 +192,7 @@ export default function SitePage() {
         </section>
 
         {/* 5. Testimonials Section */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
             <div className="container max-w-4xl">
                 <div className="text-center mb-12">
                     <h2 className="font-headline text-3xl md:text-4xl font-bold">Trusted by Entrepreneurs & Creators</h2>
@@ -223,7 +223,7 @@ export default function SitePage() {
         </section>
 
         {/* 6. Call-to-Action Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
           <div className="container max-w-3xl text-center">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">
               Ready to Build Your Website?

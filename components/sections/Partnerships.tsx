@@ -5,7 +5,7 @@ import { Handshake, Briefcase } from "lucide-react";
 
 export function Partnerships() {
   return (
-    <section id="contact" className="py-20 lg:py-32">
+    <section id="contact" className="section-padding">
       <div className="container">
         <div className="max-w-3xl mx-auto text-center space-y-6">
           <h2 className="font-headline text-3xl md:text-4xl font-bold">

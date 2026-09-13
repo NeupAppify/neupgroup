@@ -86,7 +86,7 @@ export default function EstatePage() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* 1. Hero Section */}
-        <section className="relative py-20 md:py-32 bg-card">
+        <section className="relative section-padding">
           <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent"></div>
           <Image 
             src="https://picsum.photos/seed/estate-hero/1920/1080"
@@ -137,7 +137,7 @@ export default function EstatePage() {
         </section>
 
         {/* 2. Featured Listings Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container">
                 <div className="text-center mb-12">
                     <h2 className="font-headline text-3xl md:text-4xl font-bold">Start Your Property Journey</h2>
@@ -174,7 +174,7 @@ export default function EstatePage() {
         </section>
 
         {/* 3. How It Works Section */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
           <div className="container max-w-6xl">
             <div className="text-center mb-16">
               <h2 className="font-headline text-3xl md:text-4xl font-bold">Buying & Selling Made Simple</h2>
@@ -195,7 +195,7 @@ export default function EstatePage() {
         </section>
 
         {/* 4. Why Choose Us Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
           <div className="container">
              <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
@@ -217,7 +217,7 @@ export default function EstatePage() {
         </section>
 
         {/* 5. Testimonials Section */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
             <div className="container max-w-4xl">
                 <div className="text-center mb-12">
                     <h2 className="font-headline text-3xl md:text-4xl font-bold">What Our Clients Say</h2>
@@ -248,7 +248,7 @@ export default function EstatePage() {
         </section>
 
         {/* 6. Call-to-Action Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
           <div className="container max-w-3xl text-center">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">
               Ready to Buy, Sell, or Invest?

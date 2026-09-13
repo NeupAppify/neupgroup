@@ -43,7 +43,7 @@ export default function BlogPage() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-20 md:py-32 bg-card">
+        <section className="section-padding">
           <div className="container">
             <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter max-w-4xl">
               Neup.Blog
@@ -61,7 +61,7 @@ export default function BlogPage() {
         </section>
 
         {/* Blog Grid Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container">
               <h2 className="font-headline text-3xl font-bold mb-8">Featured Articles</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

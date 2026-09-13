@@ -86,7 +86,7 @@ export default function MarketingPage() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-20 md:py-32 lg:py-40 bg-card">
+        <section className="section-padding">
           <div className="container">
             <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter max-w-3xl">
               Marketing Built for Scale, Not Vanity
@@ -112,7 +112,7 @@ export default function MarketingPage() {
         </section>
 
         {/* What We Do */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container max-w-4xl">
                 <h2 className="font-headline text-3xl md:text-4xl font-bold">
                     What We Actually Do
@@ -127,7 +127,7 @@ export default function MarketingPage() {
         </section>
 
         {/* Core Capabilities */}
-        <section id="capabilities" className="py-20 md:py-28 bg-card">
+        <section id="capabilities" className="section-padding">
           <div className="container">
             <div className="mb-12">
               <h2 className="font-headline text-3xl md:text-4xl font-bold">Core Capabilities</h2>
@@ -152,7 +152,7 @@ export default function MarketingPage() {
         </section>
 
         {/* Why We Are Different */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-4">
@@ -177,7 +177,7 @@ export default function MarketingPage() {
         </section>
 
         {/* Who This Is For */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
             <div className="container max-w-4xl">
                 <div>
                      <h2 className="font-headline text-3xl md:text-4xl font-bold">Who This Is For</h2>
@@ -199,7 +199,7 @@ export default function MarketingPage() {
         </section>
 
         {/* Our Clients Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container max-w-5xl">
                 <div className="text-center mb-12">
                      <h2 className="font-headline text-3xl md:text-4xl font-bold">Trusted by Forward-Thinking Brands</h2>
@@ -217,7 +217,7 @@ export default function MarketingPage() {
         </section>
 
         {/* Reviews Section */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
             <div className="container max-w-5xl">
                 <div className="text-center mb-12">
                      <h2 className="font-headline text-3xl md:text-4xl font-bold">What Our Partners Say</h2>
@@ -239,7 +239,7 @@ export default function MarketingPage() {
         </section>
 
         {/* How We Engage */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container max-w-5xl">
                 <div className="mb-12">
                      <h2 className="font-headline text-3xl md:text-4xl font-bold">How We Engage</h2>
@@ -266,7 +266,7 @@ export default function MarketingPage() {
         </section>
         
         {/* Part of Neup Group */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
             <div className="container">
                 <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
                     <div className="space-y-4">
@@ -289,7 +289,7 @@ export default function MarketingPage() {
         </section>
 
         {/* Final CTA */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
           <div className="container max-w-3xl">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">
               Ready to build marketing that actually grows your business?

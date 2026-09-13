@@ -49,7 +49,7 @@ export default function DesignPage() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-20 md:py-32 lg:py-40 bg-card">
+        <section className="section-padding">
           <div className="container">
             <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
@@ -79,7 +79,7 @@ export default function DesignPage() {
         </section>
 
         {/* Services Section */}
-        <section id="services" className="py-20 md:py-28">
+        <section id="services" className="section-padding">
           <div className="container">
             <div className="mb-12 text-center">
               <h2 className="font-headline text-3xl md:text-4xl font-bold">Our Services</h2>
@@ -104,7 +104,7 @@ export default function DesignPage() {
         </section>
 
         {/* Philosophy Section */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
             <div className="container">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-4">
@@ -129,7 +129,7 @@ export default function DesignPage() {
         </section>
         
         {/* Who This Is For */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container max-w-4xl">
                 <div>
                      <h2 className="font-headline text-3xl md:text-4xl font-bold">Who We Partner With</h2>
@@ -147,7 +147,7 @@ export default function DesignPage() {
         </section>
 
         {/* Part of Neup Group */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
             <div className="container">
                 <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
                     <div className="space-y-4">
@@ -170,7 +170,7 @@ export default function DesignPage() {
         </section>
 
         {/* Final CTA */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
           <div className="container max-w-3xl text-center">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">
               Have a project in mind?

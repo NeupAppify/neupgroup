@@ -82,7 +82,7 @@ export default function FoundationPage() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* 1. Hero Section */}
-        <section className="relative py-20 md:py-32 bg-card">
+        <section className="relative section-padding">
           <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent"></div>
           <Image 
             src="https://picsum.photos/seed/foundation-hero/1920/1080"
@@ -114,7 +114,7 @@ export default function FoundationPage() {
         </section>
 
         {/* 2. How We Give Back Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container">
                 <div className="text-center mb-12">
                     <h2 className="font-headline text-3xl md:text-4xl font-bold">Giving Back is Built Into Everything We Do</h2>
@@ -133,7 +133,7 @@ export default function FoundationPage() {
         </section>
 
         {/* 3. Our Impact Section */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
           <div className="container">
             <div className="text-center mb-16">
               <h2 className="font-headline text-3xl md:text-4xl font-bold">See the Difference Your Support Makes</h2>
@@ -150,7 +150,7 @@ export default function FoundationPage() {
         </section>
 
         {/* 4. How You Can Participate Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container">
                 <div className="text-center mb-12">
                     <h2 className="font-headline text-3xl md:text-4xl font-bold">Every Transaction Creates Change</h2>
@@ -170,7 +170,7 @@ export default function FoundationPage() {
         </section>
 
         {/* 5. Testimonials Section */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
             <div className="container max-w-4xl">
                 <div className="text-center mb-12">
                     <h2 className="font-headline text-3xl md:text-4xl font-bold">Voices of the Community</h2>
@@ -201,7 +201,7 @@ export default function FoundationPage() {
         </section>
 
         {/* 6. Call-to-Action Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
           <div className="container max-w-3xl text-center">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">
               Be Part of a Movement That Gives Back

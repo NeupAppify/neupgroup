@@ -64,7 +64,7 @@ export default function LifeAtNeupPage() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* 1. Hero Section */}
-        <section className="relative py-20 md:py-32 bg-card">
+        <section className="relative section-padding">
            <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent"></div>
            <Image
             src="https://picsum.photos/seed/life-hero/1920/1080"
@@ -90,7 +90,7 @@ export default function LifeAtNeupPage() {
         </section>
 
         {/* 2. Philosophy Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container">
                 <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
                     <div>
@@ -119,7 +119,7 @@ export default function LifeAtNeupPage() {
         </section>
 
         {/* 3. Core Values Section */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
             <div className="container">
                 <div className="text-center mb-12">
                     <h2 className="font-headline text-3xl md:text-4xl font-bold">Our Core Values</h2>
@@ -143,7 +143,7 @@ export default function LifeAtNeupPage() {
         </section>
         
         {/* 4. Team Moments / Gallery */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container">
                 <div className="text-center mb-12">
                     <h2 className="font-headline text-3xl md:text-4xl font-bold">Team Moments</h2>
@@ -168,7 +168,7 @@ export default function LifeAtNeupPage() {
         </section>
 
         {/* 5. Call-to-Action Section */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
           <div className="container max-w-3xl text-center">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">
               Life at Neup Group isn’t just about work—it’s about thriving together.

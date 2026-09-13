@@ -33,7 +33,7 @@ export function VenturePortfolio() {
   }, []);
 
   return (
-    <section id="ventures" className="py-20 lg:py-32 bg-card">
+    <section id="ventures" className="section-padding">
       <div className="container">
         <div className="text-center space-y-4 mb-12">
           <h2 className="font-headline text-3xl md:text-4xl font-bold">Our Ventures</h2>

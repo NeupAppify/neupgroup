@@ -66,7 +66,7 @@ export default function SocialsPage() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-20 md:py-32 lg:py-40 bg-card">
+        <section className="section-padding">
           <div className="container">
             <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
@@ -96,7 +96,7 @@ export default function SocialsPage() {
         </section>
 
         {/* The Real Problem Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container max-w-4xl">
                 <h2 className="font-headline text-3xl md:text-4xl font-bold">
                     Why Most Brands Fail on Social
@@ -111,7 +111,7 @@ export default function SocialsPage() {
         </section>
         
         {/* Capabilities Section */}
-        <section id="capabilities" className="py-20 md:py-28 bg-card">
+        <section id="capabilities" className="section-padding">
           <div className="container">
             <div className="mb-12 text-center">
               <h2 className="font-headline text-3xl md:text-4xl font-bold">What We Actually Do</h2>
@@ -136,7 +136,7 @@ export default function SocialsPage() {
         </section>
 
         {/* Philosophy Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-4">
@@ -161,7 +161,7 @@ export default function SocialsPage() {
         </section>
 
         {/* Platforms Section */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
             <div className="container text-center">
                 <h2 className="font-headline text-3xl md:text-4xl font-bold">Where We Play</h2>
                 <p className="max-w-2xl mx-auto mt-4 text-muted-foreground">
@@ -179,7 +179,7 @@ export default function SocialsPage() {
         </section>
 
         {/* Who This Is For */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container max-w-4xl">
                 <div>
                      <h2 className="font-headline text-3xl md:text-4xl font-bold">Who This Is For</h2>
@@ -201,7 +201,7 @@ export default function SocialsPage() {
         </section>
         
         {/* Part of Neup Group */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
             <div className="container text-center max-w-3xl mx-auto">
                 <NeupLogo className="h-12 w-12 text-primary mx-auto"/>
                 <h2 className="font-headline text-3xl font-bold mt-4">Part of Neup Group</h2>
@@ -210,7 +210,7 @@ export default function SocialsPage() {
         </section>
 
         {/* Final CTA */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
           <div className="container max-w-3xl text-center">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">
               Ready to build attention that compounds?

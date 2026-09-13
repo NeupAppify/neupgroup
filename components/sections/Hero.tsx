@@ -11,7 +11,7 @@ const heroImage = {
 
 export function Hero() {
   return (
-    <section className="w-full py-12 md:py-20 lg:py-28 bg-white relative overflow-hidden">
+    <section className="hero-section-padding relative w-full overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute w-96 h-96 bg-primary/5 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl animate-blob"></div>
         <div className="absolute w-96 h-96 bg-secondary rounded-full right-0 bottom-0 translate-x-1/2 translate-y-1/2 blur-3xl animate-blob" style={{ animationDelay: '2s' }}></div>
@@ -20,10 +20,10 @@ export function Hero() {
         <div className="grid items-center gap-12 md:grid-cols-2">
           <div className="flex flex-col items-start space-y-6 text-left">
             <div className="space-y-4 max-w-3xl">
-              <h1 className="font-headline text-4xl font-semibold tracking-tighter sm:text-5xl md:text-6xl lg:text-6xl/none">
+              <h1 className="font-headline text-4xl font-semibold leading-tight tracking-tighter sm:text-5xl md:text-6xl lg:text-6xl/none">
                 We build meaningful digital ventures.
               </h1>
-              <p className="text-muted-foreground md:text-xl">
+              <p className="text-base font-normal leading-relaxed tracking-normal text-muted-foreground md:text-xl md:leading-8">
                 Neup Group is a venture studio from Nepal, focused on building the next generation of products and platforms for a global audience.
               </p>
             </div>

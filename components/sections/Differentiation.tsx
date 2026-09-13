@@ -21,7 +21,7 @@ const differentiators = [
 
 export function Differentiation() {
   return (
-    <section id="differentiation" className="py-20 lg:py-32 bg-card">
+    <section id="differentiation" className="section-padding">
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-4">

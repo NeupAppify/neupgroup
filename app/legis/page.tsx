@@ -64,7 +64,7 @@ export default function LegisPage() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-20 md:py-32 bg-card">
+        <section className="section-padding">
           <div className="container">
             <div className="max-w-4xl">
               <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter">
@@ -82,7 +82,7 @@ export default function LegisPage() {
         </section>
 
         {/* The Problem Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
           <div className="container">
             <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
               <div className="space-y-4">
@@ -107,7 +107,7 @@ export default function LegisPage() {
         </section>
 
         {/* Capabilities Section */}
-        <section id="capabilities" className="py-20 md:py-28 bg-card">
+        <section id="capabilities" className="section-padding">
           <div className="container">
             <div className="text-center mb-12">
               <h2 className="font-headline text-3xl md:text-4xl font-bold">What Neup.Legis Provides</h2>
@@ -132,7 +132,7 @@ export default function LegisPage() {
         </section>
 
         {/* Who It's For Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container">
                  <div className="text-center mb-12">
                     <h2 className="font-headline text-3xl md:text-4xl font-bold">Designed for Clear Understanding</h2>
@@ -155,7 +155,7 @@ export default function LegisPage() {
         </section>
 
         {/* How It Works Section */}
-        <section id="how-it-works" className="py-20 md:py-28 bg-card">
+        <section id="how-it-works" className="section-padding">
             <div className="container max-w-5xl">
                 <div className="text-center mb-16">
                      <h2 className="font-headline text-3xl md:text-4xl font-bold">A Clear Path to Knowledge</h2>
@@ -181,7 +181,7 @@ export default function LegisPage() {
         </section>
         
         {/* Trust & Integrity Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
             <div className="container max-w-3xl text-center bg-background/50 p-8 rounded-lg">
                 <h2 className="font-headline text-3xl font-bold">Built for Accuracy, Neutrality, and Long-Term Use</h2>
                 <div className="mt-6 space-y-4 text-muted-foreground">
@@ -192,7 +192,7 @@ export default function LegisPage() {
         </section>
 
         {/* Ecosystem Backing Section */}
-        <section className="py-12 bg-card">
+        <section className="section-padding">
             <div className="container text-center">
                 <p className="text-sm text-muted-foreground">
                     Neup.Legis is a legal knowledge platform by <b className="font-semibold text-foreground">Neup Group Private Limited</b>, designed as part of a long-term digital infrastructure ecosystem.
@@ -201,7 +201,7 @@ export default function LegisPage() {
         </section>
 
         {/* Final CTA */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
           <div className="container max-w-3xl text-center">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">
               Understand the Law. Act With Clarity.

@@ -56,7 +56,7 @@ export default function NeupAccountPage() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-20 md:py-32 lg:py-40 bg-card">
+        <section className="section-padding">
           <div className="container">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
@@ -86,7 +86,7 @@ export default function NeupAccountPage() {
         </section>
 
         {/* The Problem Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
           <div className="container max-w-4xl">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">
               The Problem: Fragmentation
@@ -101,7 +101,7 @@ export default function NeupAccountPage() {
         </section>
 
         {/* What It Enables Section */}
-        <section id="features" className="py-20 md:py-28 bg-card">
+        <section id="features" className="section-padding">
           <div className="container">
             <div className="mb-12 text-center">
               <h2 className="font-headline text-3xl md:text-4xl font-bold">What Neup.Account Enables</h2>
@@ -126,7 +126,7 @@ export default function NeupAccountPage() {
         </section>
 
         {/* How It Works Section */}
-        <section id="how-it-works" className="py-20 md:py-28">
+        <section id="how-it-works" className="section-padding">
           <div className="container max-w-5xl">
             <div className="text-center mb-12">
               <h2 className="font-headline text-3xl md:text-4xl font-bold">A Simple, Secure Flow</h2>
@@ -150,7 +150,7 @@ export default function NeupAccountPage() {
         </section>
 
         {/* Powered Products Section */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
           <div className="container text-center">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">Products Powered by Neup.Account</h2>
             <p className="max-w-2xl mx-auto mt-4 text-muted-foreground">
@@ -176,7 +176,7 @@ export default function NeupAccountPage() {
         </section>
 
         {/* Philosophy Section */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
           <div className="container">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="space-y-4">
@@ -201,7 +201,7 @@ export default function NeupAccountPage() {
         </section>
 
         {/* Part of Neup Group */}
-        <section className="py-20 md:py-28 bg-card">
+        <section className="section-padding">
           <div className="container text-center max-w-3xl mx-auto">
             <NeupLogo className="h-12 w-12 text-primary mx-auto" />
             <h2 className="font-headline text-3xl font-bold mt-4">Core Neup Group Infrastructure</h2>
@@ -210,7 +210,7 @@ export default function NeupAccountPage() {
         </section>
 
         {/* Final CTA */}
-        <section className="py-20 md-py-28">
+        <section className="section-padding">
           <div className="container max-w-3xl text-center">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">
               Your identity across Neup starts here.

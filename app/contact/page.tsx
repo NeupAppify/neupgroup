@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="flex min-h-screen flex-col">
-      <section className="bg-card py-20 md:py-32">
+    <div className="flex flex-col">
+      <section className="section-padding">
         <div className="container">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-primary">Get in touch</p>
           <h1 className="max-w-4xl font-headline text-4xl font-bold tracking-tighter md:text-5xl lg:text-6xl">
@@ -22,7 +22,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-28">
+      <section className="section-padding">
         <div className="container grid gap-6 md:grid-cols-3">
           <div className="rounded-lg border bg-card p-6">
             <Handshake className="mb-5 h-8 w-8 text-primary" />

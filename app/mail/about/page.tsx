@@ -63,7 +63,7 @@ export default function MailPage() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-20 md:py-32 bg-card">
+        <section className="section-padding">
           <div className="container">
             <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">
@@ -95,7 +95,7 @@ export default function MailPage() {
         </section>
 
         {/* Features Section */}
-        <section id="features" className="py-20 md:py-28">
+        <section id="features" className="section-padding">
           <div className="container">
             <div className="mb-12 text-center">
               <h2 className="font-headline text-3xl md:text-4xl font-bold">A Better Email Experience</h2>
@@ -120,7 +120,7 @@ export default function MailPage() {
         </section>
 
         {/* Pricing Section */}
-        <section id="pricing" className="py-20 md:py-28 bg-card">
+        <section id="pricing" className="section-padding">
             <div className="container">
                 <div className="mb-12 text-center">
                     <h2 className="font-headline text-3xl md:text-4xl font-bold">Simple, Transparent Pricing</h2>
@@ -160,7 +160,7 @@ export default function MailPage() {
         </section>
 
         {/* Final CTA */}
-        <section className="py-20 md:py-28">
+        <section className="section-padding">
           <div className="container max-w-3xl text-center">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">
               Take Back Control of Your Inbox.
