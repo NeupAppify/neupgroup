@@ -9,6 +9,7 @@ import { Footer } from '@/components/shared/Footer';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import RootLayoutShell from '@neup/components/layout/RootLayout';
 import { SessionProvider } from '@neup/core/providers/session';
+import { getServerSession } from '@/lib/session';
 
 export const metadata: Metadata = {
   title: {
@@ -25,6 +26,7 @@ export default async function RootLayout({
 }>) {
 
   const { contextId, signedContextId } = await getAnalyticsContext();
+  const user = await getServerSession();
   const requestHeaders = await headers();
   const pagePath = requestHeaders.get("x-invoke-path") ?? requestHeaders.get("next-url") ?? "/";
   await logPageActivity(contextId, pagePath);
@@ -37,12 +39,12 @@ export default async function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
       </head>
 
       <body className={cn('font-body antialiased')}>
         <ThemeProvider>
-          <SessionProvider>
+          <SessionProvider initialUser={user}>
             <RootLayoutShell>
               <Header />
               <main>{children}</main>

@@ -9,7 +9,7 @@
     --theme-l: 9%;
 
     /* Light Theme Defaults */
-    --background-light: 0 0% 98%;
+    --background-light: 0 0% 100%;
     --foreground-light: 0 0% 3.9%;
     --card-light: 0 0% 100%;
     --card-foreground-light: 0 0% 3.9%;
@@ -99,6 +99,29 @@
     --border: var(--border-dark);
     --input: var(--input-dark);
     --ring: var(--ring-dark);
+  }
+}
+
+@layer components {
+  main > section:nth-of-type(odd) {
+    background-color: #ffffff;
+  }
+
+  main > section:nth-of-type(even) {
+    background-color: #f1f1f1;
+  }
+
+  footer,
+  footer a,
+  footer svg,
+  footer h3,
+  footer h4,
+  footer p {
+    color: #f8fafc !important;
+  }
+
+  footer .text-muted-foreground {
+    color: #cbd5e1 !important;
   }
 }
 

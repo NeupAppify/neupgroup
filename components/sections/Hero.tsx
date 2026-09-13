@@ -11,7 +11,7 @@ const heroImage = {
 
 export function Hero() {
   return (
-    <section className="w-full py-24 md:py-32 lg:py-48 bg-card relative overflow-hidden">
+    <section className="w-full py-12 md:py-20 lg:py-28 bg-white relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute w-96 h-96 bg-primary/5 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl animate-blob"></div>
         <div className="absolute w-96 h-96 bg-secondary rounded-full right-0 bottom-0 translate-x-1/2 translate-y-1/2 blur-3xl animate-blob" style={{ animationDelay: '2s' }}></div>
@@ -20,7 +20,7 @@ export function Hero() {
         <div className="grid items-center gap-12 md:grid-cols-2">
           <div className="flex flex-col items-start space-y-6 text-left">
             <div className="space-y-4 max-w-3xl">
-              <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none">
+              <h1 className="font-headline text-4xl font-semibold tracking-tighter sm:text-5xl md:text-6xl lg:text-6xl/none">
                 We build meaningful digital ventures.
               </h1>
               <p className="text-muted-foreground md:text-xl">
@@ -28,11 +28,11 @@ export function Hero() {
               </p>
             </div>
             <div className="flex flex-col gap-4 min-[400px]:flex-row">
-              <LinkButton size="lg" href="#ventures">
+              <LinkButton variant="solid" size="lg" href="/about/ventures">
                   Explore Ventures
                   <MoveRight className="ml-2 h-5 w-5" />
                 </LinkButton>
-              <LinkButton variant="outline" size="lg" href="mailto:contact@neup.group">
+              <LinkButton variant="outline" size="lg" href="/contacts">
                   Contact Us
                 </LinkButton>
             </div>

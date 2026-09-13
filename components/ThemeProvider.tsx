@@ -10,12 +10,6 @@ type ThemeContextType = {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-const colors = [
-  "#000000", "#6B7280", "#EF4444", "#F97316", "#F59E0B", "#EAB308", 
-  "#84CC16", "#22C55E", "#10B981", "#14B8A6", "#06B6D4", "#0EA5E9", 
-  "#3B82F6", "#6366F1", "#8B5CF6", "#A855F7", "#D946EF", "#EC4899", "#F43F5E",
-];
-
 // Function to convert hex to HSL
 function hexToHsl(hex: string): [number, number, number] | null {
   const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
@@ -51,9 +45,8 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     if (savedColor) {
       setThemeColorState(savedColor);
     } else {
-      // If no color is saved, pick a random one
-      const randomColor = colors[Math.floor(Math.random() * colors.length)];
-      setThemeColorState(randomColor);
+      // Keep the default theme on the black variant.
+      setThemeColorState('#000000');
     }
     setMounted(true);
   }, []);
@@ -76,7 +69,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
         
         // Light theme
         if (themeColor === '#000000') {
-             root.style.setProperty('--background-light', `0 0% 98%`);
+             root.style.setProperty('--background-light', `0 0% 100%`);
              root.style.setProperty('--foreground-light', `0 0% 3.9%`);
              root.style.setProperty('--primary-light', `0 0% 9%`);
              root.style.setProperty('--primary-foreground-light', `0 0% 98%`);

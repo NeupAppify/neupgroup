@@ -22,7 +22,7 @@ export function Footer() {
 
 
   return (
-    <footer className="border-t py-16 bg-card">
+    <footer className="border-t py-16 bg-[rgb(19,26,34)] text-white">
       <div className="container max-w-screen-2xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-4">

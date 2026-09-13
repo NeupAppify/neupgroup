@@ -51,8 +51,8 @@ export function Header() {
   const secondaryText = user?.neupId?.trim() || user?.accountId?.trim() || '';
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-border/40 bg-background/95 shadow-md backdrop-blur supports-[backdrop-filter]:bg-background/60 relative">
-      <div className="container flex h-14 max-w-screen-2xl items-center justify-between">
+    <header className="sticky top-0 z-40 w-full border-b border-border/40 bg-white shadow-md shadow-[0_16px_40px_rgba(15,23,42,0.10)] backdrop-blur relative">
+      <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
         {/* Left Section: Logo */}
         <div className="flex items-center">
           <div

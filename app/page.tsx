@@ -8,8 +8,6 @@ import { Differentiation } from '@/components/sections/Differentiation';
 import { Partnerships } from '@/components/sections/Partnerships';
 import type { Metadata } from 'next';
 import { OurClients } from '@/components/sections/OurClients';
-import { getServerSession } from '@/lib/session';
-import { HomeWelcome } from '@/components/sections/HomeWelcome';
 
 export const metadata: Metadata = {
   title: 'Home',
@@ -18,11 +16,8 @@ export const metadata: Metadata = {
 export const dynamic = 'force-dynamic';
 
 export default async function Home() {
-  const user = await getServerSession();
-
   return (
     <>
-      <HomeWelcome user={user} />
       <Hero />
       <CompanyOverview />
       <VenturePortfolio />

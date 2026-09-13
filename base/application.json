@@ -70,7 +70,7 @@
     },
     "typography": {
       "fontFamily": {
-        "primary": "Poppins, sans-serif",
+        "primary": "Outfit, sans-serif",
         "secondary": "Arial, sans-serif"
       },
       "customStyles": {}

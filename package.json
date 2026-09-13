@@ -6,9 +6,9 @@
     "setup": "./setup.sh",
     "prebuild": "npm run setup",
     "predev": "npm run setup",
-    "dev": "sudo next dev --turbopack --experimental-https --hostname dev.neupgroup.com --port 443",
+    "dev": "sudo next dev --turbopack --experimental-https --hostname dev.neupgroup.com --port 6387",
     "build": "npx next build",
-    "start": "next start",
+    "start": "next start --port 6387",
     "postinstall": "patch-package",
     "lint": "next lint",
     "typecheck": "tsc --noEmit"
