@@ -2,51 +2,13 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { Button } from '@neup/components/ui/button';
 import { Userbar } from '@neup/components/element/userbar';
 import { useSession } from '@neup/core/providers/session';
-import { NeupLogo } from '@/components/NeupLogo';
-import { ventures } from '@/components/sections/VenturePortfolio.config';
-import { useTypewriter } from '@neup/core/hooks/useTypewritter';
-import { useEffect, useState } from 'react';
-import { ArrowLeft } from 'lucide-react';
 import { MobileNav } from './MobileNav';
+import { HeaderBranding } from './HeaderBranding';
 
 export function Header() {
-  const pathname = usePathname();
   const { user } = useSession();
-  const [targetTitle, setTargetTitle] = useState('Neup.Group');
-  const [headerLink, setHeaderLink] = useState('/');
-  const [isLogoHovered, setIsLogoHovered] = useState(false);
-
-  useEffect(() => {
-    const getHeaderInfo = () => {
-      if (pathname.startsWith('/clients')) {
-        return { title: 'Neup.Clients', link: '/clients' };
-      }
-
-      // Find the venture whose link is the longest matching prefix of the current path
-      const currentVenture = ventures
-        .filter(v => v.link !== '/' && pathname.startsWith(v.link))
-        .sort((a, b) => b.link.length - a.link.length)[0];
-
-      if (currentVenture) {
-        return { title: currentVenture.name, link: currentVenture.link };
-      }
-
-      // Default for home and other pages (including /case and /case/*)
-      return { title: 'Neup.Group', link: '/' };
-    };
-
-    const { title, link } = getHeaderInfo();
-    setTargetTitle(title);
-    setHeaderLink(link);
-  }, [pathname]);
-
-  const animatedTitle = useTypewriter(targetTitle);
-
-  const isHomePage = pathname === '/';
   const displayName = user?.displayName?.trim() || 'User';
   const secondaryText = user?.neupId?.trim() || user?.accountId?.trim() || '';
 
@@ -57,30 +19,7 @@ export function Header() {
     >
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
         {/* Left Section: Logo */}
-        <div className="flex items-center">
-          <div
-            className="flex items-center space-x-2"
-            onMouseEnter={() => !isHomePage && setIsLogoHovered(true)}
-            onMouseLeave={() => setIsLogoHovered(false)}
-          >
-            <Link href="/" aria-label="Back to Neup Group Homepage" className={`relative h-6 w-6 ${isHomePage ? 'cursor-default' : ''}`}>
-              <div className={`transition-opacity duration-300 ${isLogoHovered ? 'opacity-0' : 'opacity-100'}`}>
-                <NeupLogo className="h-6 w-6 text-primary" />
-              </div>
-              {!isHomePage && (
-                <div className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 ${isLogoHovered ? 'opacity-100' : 'opacity-0'}`}>
-                  <ArrowLeft className="h-6 w-6 text-primary" />
-                </div>
-              )}
-            </Link>
-
-            <Link href={headerLink}>
-              <span className="font-bold sm:inline-block font-headline min-w-[150px]">
-                {animatedTitle}
-              </span>
-            </Link>
-          </div>
-        </div>
+        <HeaderBranding />
 
         {/* Center Section: Navigation */}
         <nav className="hidden items-center gap-6 text-sm md:flex">
